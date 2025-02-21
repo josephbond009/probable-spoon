@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Media Showcase</title>
+
+    <style>
+     
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+        color: #333;
+        text-align: center;
+      }
+
+      header {
+        background-color: #222;
+        color: white;
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+
+      .profile {
+        margin: 20px auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      picture img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .video-section {
+        margin: 30px auto;
+        max-width: 800px;
+      }
+
+      video {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .audio-section {
+        margin: 30px auto;
+      }
+
+      .parag {
+        margin-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #555;
+      }
+
+      a:hover {
+        color: #222;
+      }
+
+      .iframe-section {
+        margin: 30px auto;
+        max-width: 800px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        iframe {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <h1>Welcome to My Digital Space</h1>
+      <p>A showcase of my journey, passions, and aspirations.</p>
+    </header>
+
+    
+    <section class="profile">
+      <h2>Meet Me</h2>
+      <picture>
+        <source srcset="files/Fine boy.jpeg" media="(min-width: 1024px)" />
+        <source srcset="files/Fine boy.jpeg" media="(min-width: 768px)" />
+        <source srcset="files/Fine boy.jpeg" media="(max-width: 767px)" />
+        <img src="files/Fine boy.jpeg" alt="My Profile Picture" />
+      </picture>
+      <p>
+        My name is Joseph Aziguene, born and raised in the hectic city of Lagos, Nigeria. 
+        I am passionate about tech, engineering, and problem-solving. My goal is
+        to use technology to create impactful solutions. I attend AltSchool Africa 
+        I'm in the Frontend Engineering track. My main goal is to become a full-stack
+        engineer, so I keep trying to polish my skills as a developer. 
+      </p>
+      <p>I am also a very big music enthusiast even though I can hardly play any musical
+        instrument or have any singing talent for that matter 😂. My favorite music genre is
+       <b>HIP-HOP</b>. 
+      </p>
+    </section>
+
+    <section class="video-section">
+      <h2>My Story in Motion</h2>
+      <p class="parag">I really love HIP-HOP, and one of my favourite rappers is the Underground
+         legend <a href=""></a>MF DOOM. Below is a video of one of my favorite song from him "ALL CAPS".
+      </p>
+      <video controls poster="images/video-thumbnail.jpg">
+        <source src="files/Madvillain - All Caps.mp4" type="video/mp4" />
+        <source src="files/Madvillain - All Caps.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="audio-section">
+      <h2>Listen to Some Generational Rapping Performance</h2>
+      <p class="parag">Below is another favorite of mine from the Masked Villain, "Figaro" by MF DOOM.</p>
+      <audio controls>
+        <source src="files/14 Figaro.m4a" type="audio/mpeg" />
+        <source src="files/14 Figaro.m4a" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section class="iframe-section">
+      <h2>Check Out My Work</h2>
+      <p>I know I went on a bit of a caveat about my love for HIP-HOP 🙃 but pls
+         check out some of my little projects on <a href="https://github.com/josephbond009"><b>Github</b></a>.
+      </p>
+      
+      <p class="parag"> While doing that, you can also check out AltSchool Africa in the embeded link below. </p>
+      <iframe
+        src="https://altschoolafrica.com"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </body>
+</html>
